@@ -10,5 +10,5 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(router);
-db().then(() => console.log("conexion ready"));
-app.listen(PORT, () => console.log(`funco en el puerto ${PORT}`));
+db().then(() => console.log("mongoDB connection"));
+app.listen(PORT, () => console.log(`start on port: ${PORT}`));
